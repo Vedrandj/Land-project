@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>How we are doing it</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+      
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <div class="quality">
+          <h6>Best quality</h6>
+          <img src="Images/heart.jpg" alt="heart">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Showcase</h2>
+        <img class="showcase" src="Images/showcase.png" alt="showcase">
+        
+
+        <div class="understanding">
+          <h6>Rich understanding</h6>
+          <img src="Images/flash.jpg" alt="flash">
+          <p>Lorem ipsum dolor sit amet.</p>
+
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Our Projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <div class="phone">
+          <h6>Great support</h6>
+          <img src="Images/phones.jpg" alt="phones">
+          <p>Lorem ipsum dolor sit amet.</p>
+
+        </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Testimonial</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque natus libero ipsam eligendi quo. Est ea dicta, maxime, porro nesciunt reiciendis commodi modi rerum veniam non ut quibusdam a accusamus vero, quis ducimus quisquam libero asperiores deserunt dolor optio delectus! Placeat beatae doloremque magnam esse dolore laborum eum cum? Ipsum magni soluta necessitatibus fuga facere eaque quae eos, ratione, eum laboriosam nostrum facilis culpa impedit aliquid quo earum accusamus corrupti.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eaque iusto tempora expedita provident! Sunt qui molestiae totam nostrum consectetur expedita veritatis doloremque necessitatibus exercitationem fugiat libero, tempore, corporis, illum dicta minus porro dolore repellat omnis officia. Cumque aperiam nostrum, quia ullam nemo quam nesciunt nihil, illum rerum possimus accusamus.</p>
+      </div>
+    </section>
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        
+        <input type="text" name="name" required minlength="4" maxlength="8" size="10">
+
+        <label for="name">Last Name:</label>
+        
+        <input type="text" name="name" required minlength="4" maxlength="8" size="10">
+
+        <label for="email">Enter your E-mail here</label>
+        
+        <input type="email" id="email" size="30" required>
+
+        <label for="pass">Password (8 characters minimum):</label>
+        <input type="password" id="pass" name="password" minlength="8" required>
+
+        <label for="a1">I agree with Therms and Conditions</label>
+          <input type="checkbox" id="a1">
+
+          <label for="a2">I want to receive a newsletter</label>
+          <input type="checkbox" id="a2">
+
+          <input class="button" type="submit">
+
+      </form>
+
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Vedran Djokic</p>
+  </footer>
+
+</body>
+<script src="js/app.js"></script>
+</html>
